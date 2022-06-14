@@ -60,11 +60,14 @@ if (pets < allowedPets) {
 // console.log `mostPets` after the conditional has run.
 let mostPets;
 if (pets > friendsPets) {
-    mostPets = "I have " + pets + " pets!";
+    mostPets = pets;
+    console.log(`I have ${mostPets} pets!`)
 } else if (pets < friendsPets) {
-    mostPets = "My friend has " + friendsPets + " pets!";
-} else {
-    mostPets = "Both my friend and I have the same amount of pets!"
+    mostPets = friendsPets;
+    console.log(`My friend has ${mostPets} pets!`)
+} else if (pets == friendsPets) {
+    mostPets = pets;
+    console.log("Both my friend and I have the same amount of pets!")
 };
 console.log(mostPets);
 // 17 - Write a *switch* statement that logs:
